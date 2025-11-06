@@ -24,7 +24,7 @@ Então todos os campos devem voltar ao estado original
 
 Esquema do Cenário: Validação de quantidade
 Quando eu selecionar a quantidade <quantidade>
-Então o sistema deve <mensagem>
+Então o sistema deve exibir a mensagem <mensagem>
 
 Exemplos:
   | quantidade | mensagem                               |
