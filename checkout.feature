@@ -22,7 +22,7 @@ Então o sistema deve exibir a mensagem de alerta
 
 Esquema do Cenário: Validação de e-mail
 Quando eu preencher o e-mail com <email>
-Então o sistema deve <resultado>
+Então o sistema deve exibir o <resultado>
 
 Exemplos:
   | email           | resultado                          |
