@@ -24,7 +24,7 @@ Então todos os campos devem voltar ao estado original
 
 Esquema do Cenário: Validação de quantidade dentro do limite
 Quando eu selecionar a quantidade <7>
-Então o sistema deve exibir a mensagem <Produto adicionado ao carrinho>
+Então o sistema deve exibir a mensagem "Produto adicionado ao carrinho"
 
 Exemplos:
   | quantidade | mensagem                               |
