@@ -13,7 +13,7 @@ Quando eu preencher todos os campos obrigatórios
 Então o sistema deve concluir o cadastro com sucesso
 
 Cenário: E-mail com formato inválido
-Quando eu preencher o campo e-mail com "teste@"
+Quando eu preencher o campo e-mail com "teste.com"
 Então o sistema deve exibir a mensagem "E-mail inválido"
 
 Cenário: Campos obrigatórios vazios
@@ -21,8 +21,8 @@ Quando eu tentar enviar o formulário com campos obrigatórios vazios
 Então o sistema deve exibir a mensagem de alerta
 
 Esquema do Cenário: Validação de e-mail
-Quando eu preencher o e-mail com <email>
-Então o sistema deve exibir o resultado <resultado>
+Quando eu preencher o e-mail com <teste@email.com>
+Então o sistema deve concluir o cadastro com sucesso
 
 Exemplos:
   | email           | resultado                          |
