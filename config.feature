@@ -13,7 +13,7 @@ Cenário: Campos obrigatórios para configuração
 Quando eu selecionar a cor, tamanho e quantidade
 Então o botão de adicionar ao carrinho deve ser habilitado
 
-Cenário: Limite de quantidade de produto por venda
+Cenário: Validação de quantidade acima do limite 
 Quando eu selecionar uma quantidade maior que 10
 Então o sistema deve exibir uma mensagem de erro "Limite máximo de 10 produtos por venda"
 
@@ -22,12 +22,12 @@ Dado que já preenchi cor, tamanho e quantidade
 Quando eu clicar no botão "limpar"
 Então todos os campos devem voltar ao estado original
 
-Esquema do Cenário: Validação de quantidade
-Quando eu selecionar a quantidade <quantidade>
-Então o sistema deve exibir a mensagem <mensagem>
+Esquema do Cenário: Validação de quantidade dentro do limite
+Quando eu selecionar a quantidade <7>
+Então o sistema deve exibir a mensagem <Produto adicionado ao carrinho>
 
 Exemplos:
   | quantidade | mensagem                               |
-  | 5          | permitir adicionar ao carrinho         |
-  | 10         | permitir adicionar ao carrinho         |
-  | 11         | exibir mensagem de erro sobre o limite |
+  | 5          | Produto adicionado ao carrinho         |
+  | 10         | Produto adicionado ao carrinho         |
+  | 11         | Limite máximo de 10 produtos por venda |
