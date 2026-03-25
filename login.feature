@@ -14,4 +14,4 @@ Então o sistema deve redirecionar para a tela de checkout
 
 Cenário: Login com dados inválidos
 Quando eu inserir e-mail ou senha inválidos
-Então o sistema deve exibir a mensagem "Usuário ou senha inválidos"
+Então o sistema deve exibir a mensagem "Usuário ou senha inválidos" 
